@@ -1,0 +1,11 @@
+[package]
+name = "binance_downloader"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+reqwest = { version = "0.12", features = ["blocking"] } # 用于发送 HTTP 请求
+chrono = "0.4"                                          # 用于日期计算与解析
+zip = "2.1"                                             # 用于解压 zip 文件
+rfd = "0.14"  # <-- 新增这个库，用于弹出文件夹选择对话框
+eframe = "0.27" # 新增：现代 Rust 图形界面框架
